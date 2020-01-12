@@ -13,6 +13,15 @@ public class Employee
 
 
     //methods- geters and setters
+    public void setFname(String fname)
+    {
+        this.fname = fname;
+    }
+
+    public String getFname()
+    {
+        return fname;
+    }
 
     //methods
 }
