@@ -3,16 +3,36 @@ package employeeApp;
 public class Employee
 {
     //fields
+    private static int maxId = 0;
     private int id;
     private String fname;
     private String lname;
-    private double salary;
+    private double salary; // real number -- float
     private boolean has401k;
     private int companyId;
     private int healthPlanId;
 
+    // constructor
+    // initial state of the object
+    public Employee(String fname, String lname, double salary, boolean has401k, int companyId, int healthPlanId)
+    {
+        maxId++;
+
+        id = maxId;
+        
+        this.fname = fname;
+        this.lname = lname;
+        this.salary = salary;
+        this.has401k = has401k;
+        this.companyId = companyId;
+        this.healthPlanId = healthPlanId;
+    }
 
     //methods- geters and setters
+    public int geId()
+    {
+        return id;
+    }
     public void setFname(String fname)
     {
         this.fname = fname;
@@ -73,4 +93,9 @@ public class Employee
         return healthPlanId;
     }
     //methods
+
+    public String getName()
+    {
+        return fname + " " + lname;
+    }
 }
