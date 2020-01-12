@@ -23,5 +23,14 @@ public class Employee
         return fname;
     }
 
+    public void setLname(String lname)
+    {
+        this.lanme = lname;
+    }
+
+    public String getLname()
+    {
+        return lname;
+    }
     //methods
 }
