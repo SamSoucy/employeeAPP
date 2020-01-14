@@ -28,5 +28,20 @@ public class Main
         System.out.println(c1.debt);
         c1.debt = -c1.debt;
         System.out.println(c1.debt);
+
+        System.out.println("*** Strings ***");
+        
+        String localStr;
+        localStr = emp1.getFname() + " " + emp3.getLname();
+        System.out.println(localStr);
+        String noVowls = localStr.toLowerCase().replaceAll("[a,e,i,o,u]", "_");
+        System.out.println(noVowls);
+        
+        System.out.println();
+        System.out.println("*** Numbers ***");
+        System.out.println("Original / 5 " + (c1.debt / 5));
+        System.out.println("Original / 7 " + (c1.debt / 7));
+        System.out.println("Original / 7.0 " + (c1.debt / 7.0));
+
     }
 }
