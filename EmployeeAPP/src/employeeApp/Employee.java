@@ -104,7 +104,7 @@ public class Employee
     @Override
     public String toString()
     {
-        String rtnStr = "id" + id + "\n" +
+        String rtnStr = "id: " + id + "\n" +
                         "fname: " + fname + "\n" +
                         "lname: " + lname + "\n" +
                         "salary: " + salary + "\n" +
