@@ -98,4 +98,19 @@ public class Employee
     {
         return fname + " " + lname;
     }
+
+    //Object -> Employee
+
+    @Override
+    public String toString()
+    {
+        String rtnStr = "id" + id + "\n" +
+                        "fname: " + fname + "\n" +
+                        "lname: " + lname + "\n" +
+                        "salary: " + salary + "\n" +
+                        "has401k: " + has401k + "\n" +
+                        "companyId: " + companyId + "\n" +
+                        "healthPlanId: " + healthPlanId + "\n";
+        return rtnStr; 
+    }
 }
