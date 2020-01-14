@@ -21,5 +21,12 @@ public class Main
         Employee emp3 = new Employee("Doug", "Jones", 75000, true, c2.id, h2.getId());
         Employee emp4 = new Employee("John", "Jones", 80000, false, c2.id, h1.getId());
         Employee emp5 = new Employee("My", "Name", 45000, true, c2.id, h2.getId());
+
+        System.out.println("***Query Data***");
+        System.out.println(emp1);
+        System.out.println();
+        System.out.println(c1.debt);
+        c1.debt = -c1.debt;
+        System.out.println(c1.debt);
     }
 }
