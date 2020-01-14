@@ -43,5 +43,6 @@ public class Main
         System.out.println("Original / 7 " + (c1.debt / 7));
         System.out.println("Original / 7.0 " + (c1.debt / 7.0));
         System.out.println("Original / 7 " + ((double) c1.debt / 7));
+        System.out.println("original mod 3 " + (c1.debt % 3));
     }
 }
